@@ -1,0 +1,68 @@
+.parent{
+    max-width: 1500px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    height: auto;
+    background: rgb(223, 113, 113);
+
+}
+.first, .third, .fifth, .seventh{
+    background-color: rgb(248, 125, 77);
+    border: 2px solid rgb(240, 85, 24);
+    border-radius: 5px;
+    float: left; 
+    padding: 5px;
+    
+    
+}
+.second, .fourth, .sixth{
+    background-color: rgb(102, 189, 247);
+    border: 2px solid rgb(29, 154, 238);
+    border-radius: 5px;
+    float: left;
+    padding: 5px;
+    
+}
+
+
+.first, .second, .third, .fourth{
+    width: calc(100% / 4 - (3*11.5px));
+    margin: 16px 0px 16px 16px;
+}
+
+.fifth, .sixth , .seventh{
+    width: calc(100% / 3 - (3*12px));
+    margin: 0px 0px 16px 16px;
+}
+
+@media all and (max-width: 1200px) {
+    .first, .second, .third{
+        width: calc(100% / 3 - (3*12px));
+        margin: 16px 0px 16px 16px;
+    }
+    .fourth, .fifth, .sixth{
+        width: calc(100% / 3 - (3*12px));
+        margin: 0px 0px 16px 16px;
+    }
+    .seventh{
+       width: calc(100% - (3*16px));
+    }
+}
+@media all and (max-width: 900px){
+    .first, .second, .third, .fourth, .fifth, .sixth{
+        width: calc(100% / 2 - (3*13px));
+        margin: 16px 0px 0px 16px;
+    }
+    .seventh{
+        width: calc(100% - (3*16px));
+        margin: 16px;
+    }
+}
+@media all and (max-width: 600px){
+    .first, .second, .third, .fourth, .fifth, .sixth, .seventh{
+        width: calc(100% - (3*16px));
+    }
+}
